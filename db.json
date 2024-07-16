@@ -1,40 +1,40 @@
 {
-  "cuadros": [
+  "libros": [
     {
       "id": "1",
-      "titulo": "Monstera Deliciosa",
-      "tecnica": "Acrílico",
-      "imagen": "../img/2018_IMG_20190830_Monstera Deliciosa_acril.jpg"
+      "titulo": "Cien años de soledad",
+      "genero": "Realismo mágico",
+      "imagen": "../img/cien_años_de_soledad.jpg"
     },
     {
       "id": "2",
-      "titulo": "Pagodas Sol y Luna. China",
-      "tecnica": "Acrílico",
-      "imagen": "../img/2019-09-08_China-Las Pagodas Sol y Luna_acrilico.jpg"
+      "titulo": "1984",
+      "genero": "Distopía",
+      "imagen": "../img/1984.jpg"
     },
     {
-      "id":"3",
-      "titulo": "Retorno a sus nidos",
-      "tecnica": "Acrílico",
-      "imagen": "../img/2019-09-17_Retorno a sus nidos_acril.jpg"
+      "id": "3",
+      "titulo": "El nombre de la rosa",
+      "genero": "Misterio",
+      "imagen": "../img/el_nombre_de_la_rosa.jpg"
     },
     {
-      "id":"4",
-      "titulo":"Castillo de Vaduz. Principado de Liechtenstein" ,
-      "tecnica":"Óleo" ,
-      "imagen": "../img/2019-10-11_Castillo de Vaduz Ppado de Liechtenstein_Oleo.jpg"
+      "id": "4",
+      "titulo": "Matar a un ruiseñor",
+      "genero": "Drama",
+      "imagen": "../img/matar_a_un_ruisenor.jpg"
     },
     {
-      "id":"5",
-      "titulo":"Tropilla en acción" ,
-      "tecnica":"Acrílico y Óleo" ,
-      "imagen":"../img/2020-04-18_Tropilla en acción_acril y oleo.jpg" 
+      "id": "5",
+      "titulo": "El principito",
+      "genero": "Ficción",
+      "imagen": "../img/el_principito.jpg"
     },
     {
-      "id":"6",
-      "titulo":"Margaritas" ,
-      "tecnica":"Acrílico" ,
-      "imagen": "../img/2020-09-20_Margaritas_acril.jpg"
+      "id": "6",
+      "titulo": "Orgullo y prejuicio",
+      "genero": "Romance",
+      "imagen": "../img/orgullo_y_prejuicio.jpg"
     }
   ]
 }

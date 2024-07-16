@@ -1,14 +1,14 @@
 {
-  "name": "charly-geek",
+  "name": "book-geek",
   "version": "1.0.0",
-  "description": "plataforma de intercambio de obras de arte",
+  "description": "Libros",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sonia Veit",
+  "author": "Michell CG",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "json-server": "^1.0.0-beta.1"
   }
 }

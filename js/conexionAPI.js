@@ -1,36 +1,34 @@
-async function listarCuadros(){
-    //const conexion= await fetch("http://localhost:3001/cuadros");
-    const conexion= await fetch("https://alura-geek-api-delta.vercel.app/cuadros");
-    const conexionConvertida=conexion.json();
+async function listarLibros(){
+    const conexion = await fetch("http://localhost:3001/libros");
+    const conexionConvertida = await conexion.json();
     return conexionConvertida;
-};
+}
 
-//Aquí debemos indicar el método y qué tipo de archivo se estará enviando
-async function enviarCuadro(titulo, tecnica, imagen){
-    return await fetch("https://alura-geek-api-delta.vercel.app/cuadros",{
+async function enviarLibro(titulo, genero, imagen){
+    return await fetch("http://localhost:3001/libros", {
         method: "POST",
-        headers:{"Content-type":"application/json"},
-        body:JSON.stringify({
-            titulo:titulo,
-            tecnica:tecnica,
-            imagen:imagen
+        headers: {"Content-type": "application/json"},
+        body: JSON.stringify({
+            titulo: titulo,
+            genero: genero,
+            imagen: imagen
         })
-    })
-};
+    });
+}
 
-const borrarCuadro = async (id) => {
-    try{
-        const res= await fetch(`https://alura-geek-api-delta.vercel.app/cuadros/${id}`,{
+const borrarLibro = async (id) => {
+    try {
+        const res = await fetch(`http://localhost:3001/libros/${id}`, {
             method: "DELETE"
         });
         return await res.json();
     } catch(err) {
-        return console.log(err);
+        console.log(err);
     }
 }
 
-export const conexionApi={
-    listarCuadros,
-    enviarCuadro,
-    borrarCuadro
+export const conexionApi = {
+    listarLibros,
+    enviarLibro,
+    borrarLibro
 }
