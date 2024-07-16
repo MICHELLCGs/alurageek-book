@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+        <link rel="stylesheet" href="css/reset.css"> 
+        <link rel="stylesheet" href="css/estilos.css">
+        <!-- <link rel="icon" href="/img/c con circulo naranja.ico"> -->
+        <link rel="icon" href="./img/gato_negro.png">
+
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <h1 class="titulo-encabezado">Alura Geek - Libreria Cat Noir</h1>
+            <h3 class="descripcion-contenido">Muestra de Obras literarias</h3>
+        </header>
+
+        <!--
+        <main>
+            <div class="contenido-de-la-pag">
+                <h3 class="descripcion-contenido">Muestra de arte contemporáneo</h3>
+            </div>
+        </main> -->
+
+        <div class="contenido-general">
+        <!-- Sección contenido de los cuadros -->
+        <section class="seccion-cuadros">
+            
+            <div class="marco-contenedor" data-lista>
+                <!--
+                <div class="marco-fluor">
+                    <img src="img/2018_IMG_20190830_Monstera Deliciosa_acril.jpg" alt="Imagen 1" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Monstera Deliciosa</p>
+                    <p class="tecnica">Acrílico</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/2019-09-08_China-Las Pagodas Sol y Luna_acrilico.jpg"Imagen 2" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Pagodas Sol y Luna. China</p>
+                    <p class="tecnica">Acrílico</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/2019-09-17_Retorno a sus nidos_acril.jpg" alt="Imagen 3" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Retorno a sus nidos</p>
+                    <p class="tecnica">Acrílico</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/2019-10-11_Castillo de Vaduz Ppado de Liechtenstein_Oleo.jpg" alt="Imagen 4" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Castillo de Vaduz. Principado de Liechtenstein</p>
+                    <p class="tecnica">Óleo</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/2020-04-18_Tropilla en acción_acril y oleo.jpg" alt="Imagen 5" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Tropilla en acción</p>
+                    <p class="tecnica">Acrílico y óleo</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="marco-fluor">
+                    <img src="img/2020-09-20_Margaritas_acril.jpg" alt="Imagen 6" class="imagen-cuadro">
+                    <p class="titulo-cuadro">Margaritas</p>
+                    <p class="tecnica">Acrílico</p>
+                    <button class="eliminar" data-id="${id}">
+                        <div class="icono-papelera">
+                            <img src="img/icons8-papelera-emoji-48.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                -->
+            </div>
+            
+        </section>
+
+        <!--Sección formulario-->
+        <section class="seccion-formulario">
+            <h2 class="titulo-formulario">Agregar obra</h2>
+
+            <!--Formulario-->
+            <form class="formulario-agregar-obra" data-formulario>
+                <fieldset class="formulario-obra">
+                    <input name="titulo-obra" id="titulo" class="input-obra" placeholder="Título de la obra" type="text"
+                        data-titulo />
+                </fieldset>
+                <fieldset class="formulario-obra">
+                    <input name="tecnica-obra" id="tecnica" class="input-obra" placeholder="Técnica utilizada" type="text"
+                        data-tecnica />
+                </fieldset>
+                <fieldset class="formulario-obra">
+                    <input name="imagen-obra" id="imagen" class="input-obra" placeholder="URL de la imagen" type="text"
+                        data-imagen />
+                </fieldset>
+                <div class="botones-obra">
+                    <button type="submit" class="boton-enviar" id="btn">Enviar</button>
+                    <button type="reset" class="boton-limpiar" id="btn">Limpiar</button>
+                </div>
+            </form>
+
+        </section>
+        </div>
+        <footer class="pie-de-pagina">
+            <h1 class="titulo-encabezado">Alura Geek - Charly Art</h1>
+            <p class="copyright">Creado por &copy Michell CG - 2024</p>
+            <p class="copyright">Para Alura Latam - OracleNextEducation</p>
+    
+        </footer>
+        <script src="./js/mostrarCuadros.js" type="module"></script>
+        <script src="./js/crearCuadro.js" type="module"></script>
+    </body>
+</html>
